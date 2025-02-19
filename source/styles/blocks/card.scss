@@ -1,0 +1,264 @@
+.card__link {
+  grid-row: 1 / 5;
+  grid-column: 1 / 2;
+  margin: 0 auto;
+  text-decoration: none;
+  transform: translateY(10px);
+
+  @media (min-width: $tablet) {
+    position: relative;
+    grid-column: 1 / -1;
+    transform: translate(0, -52px);
+    margin: 0 0 0 81px;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.75;
+  }
+}
+
+.card__link--bigger {
+  transform: translateY(3px);
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 54px 12px 0;
+  color: #222222;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 58px 18px 61px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 8px 24px 9px;
+  }
+}
+
+.card__image {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -196px;
+    left: -36px;
+  }
+
+  @media (min-width: $desktop) {
+    top: -184px;
+    left: -77px;
+  }
+}
+
+.card__image--more {
+  @media (min-width: $tablet) {
+    top: -213px;
+    left: -39px;
+  }
+
+  @media (min-width: $desktop) {
+    top: -196px;
+    left: -84px;
+  }
+}
+
+.card__link-name {
+  grid-column: 2 / 3;
+  text-decoration: none;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    grid-column: 3 / 4;
+    grid-row: 3;
+    margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.75;
+    outline: none;
+  }
+}
+
+.card__info {
+  display: flex;
+  width: 140px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 12px;
+    width: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: -6px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      bottom: -7px;
+    }
+
+    &:last-of-type::after {
+      bottom: -10px;
+    }
+  }
+}
+
+.card__info--weight {
+  grid-column: 2 / 5;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+}
+
+.card__label {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: #444444;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.card__value {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: #444444;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__value--weight {
+  margin: 0 1px 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
+  }
+}
+
+.card__info--taste {
+  grid-column: 2 / 4;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+}
+
+.card__value--taste {
+  grid-column: 2 / 4;
+  margin: 0 0 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
+    grid-column: 1 / -1;
+  }
+}
+
+.card__info--cost {
+  grid-column: 2 / 4;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+}
+
+.card__value--price {
+  margin: 0 0 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 2px 0 auto;
+  }
+}
+
+.card__order-product {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #68b738;
+  color: #ffffff;
+  min-width: 280px;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 10px 18px 10px 16px;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  grid-column: 1 / -1;
+  margin: 21px 0 0;
+
+  @media (min-width: $tablet) {
+    min-width: 240px;
+    min-height: 40px;
+    margin: 37px 0 0;
+    grid-column: 2 / 5;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 169px;
+    margin: 43px 0 0;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    opacity: 0.75;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.75);
+  }
+}

@@ -1,0 +1,185 @@
+.subscription {
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 140px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 103px;
+  }
+}
+
+.subscription--styled {
+  @media (min-width: $tablet) {
+    margin: 0 0 80px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 45px;
+  }
+}
+
+.subscription__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 32px 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #68b738;
+    width: calc(100% - 192px);
+    height: 2px;
+    position: absolute;
+    bottom: 12px;
+    right: 1px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 67px 70px;
+
+    &::after {
+      width: calc(100% - 243px);
+      height: 2px;
+      bottom: 16px;
+    }
+
+    &::before {
+      content: "";
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      bottom: 16px;
+      left: -70px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 73px 110px;
+
+    &::after {
+      width: calc(100% - 294px);
+      height: 2px;
+      bottom: 20px;
+    }
+
+    &::before {
+      width: 70px;
+      bottom: 20px;
+      left: -110px;
+    }
+  }
+}
+
+.subscription__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 30px 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 124px 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscription__form {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 632px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 752px;
+  }
+}
+
+.subscription__control {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 280px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  margin: 0 0 16px;
+  padding: 0 0 0 12px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    width: 376px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 496px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+    outline: 1px solid #1646c0;
+  }
+
+  &:active {
+    opacity: 0.5;
+    color: #4e3434;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.subscription__button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  background-color: #68b738;
+  width: 280px;
+  min-height: 56px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: $desktop) {
+    width: 256px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #569a2c;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

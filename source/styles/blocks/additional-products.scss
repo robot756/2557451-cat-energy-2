@@ -1,0 +1,417 @@
+.additional-products {
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 80px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 12px;
+  }
+}
+
+.additional-products__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+  margin: 0 0 48px 20px;
+
+  &::after {
+    content: "";
+    background-color: #68b738;
+    width: calc(-266px + 100%);
+    height: 2px;
+    position: absolute;
+    bottom: 12px;
+    right: 1px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 80px 70px;
+
+    &::before {
+      content: "";
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      bottom: 16px;
+      left: -70px;
+    }
+
+    &::after {
+      width: calc(100% - 341px);
+      bottom: 16px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 77px 110px;
+
+    &::before {
+      width: 69px;
+      bottom: 19px;
+      left: -109px;
+    }
+
+    &::after {
+      width: calc(100% - 416px);
+      bottom: 19px;
+    }
+  }
+}
+
+.additional-products__data {
+  @media (min-width: $tablet) {
+    width: 707px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-rows: minmax(291px, auto) minmax(85px, auto);
+    margin: 0 auto;
+    display: grid;
+    width: 1300px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 896px;
+      height: 1px;
+      top: 4px;
+      left: 40px;
+      background-color: #cdcdcd;
+    }
+  }
+}
+
+.additional-products__list {
+  margin: 0 20px 54px;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #cdcdcd;
+    top: -13px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet) {
+    border: 1px solid #cdcdcd;
+    margin: 0 0 70px;
+    box-sizing: border-box;
+    padding: 26px 35px 0 37px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    border: none;
+    padding: 0;
+    margin: 19px 0 0 2px;
+  }
+}
+
+.additional-products__item {
+  margin: 0 0 32px;
+  list-style: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cdcdcd;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 0 28px;
+
+    &:not(:last-child) {
+      margin: 0 0 56px;
+    }
+
+    &::after {
+      width: 707px;
+      bottom: -29px;
+      left: -37px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin: 0 0 32px;
+    }
+
+    &::after {
+      width: 896px;
+      bottom: -18px;
+      left: -1px;
+    }
+  }
+}
+
+.additional-products__item-content {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3px 21px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 10px 0 0;
+  }
+}
+
+.additional-products__item-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  color: #222222;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 0 0;
+    width: 325px;
+  }
+}
+
+.additional-products__details {
+  display: flex;
+  margin: 0 0 14px;
+
+  @media (min-width: $tablet) {
+    gap: 50px;
+    margin: 2px 2px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 3px 3px 0 0;
+  }
+}
+
+.additional-products__item-volume {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  color: #444444;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+
+    &--spaced {
+      margin-right: 9px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 193px;
+    margin: 0 auto 0 0;
+  }
+}
+
+.additional-products__item-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0 0 0 auto;
+  color: #444444;
+
+  &--spaced {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 1px 0 auto;
+    color: #444444;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+
+    &--spaced {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #444444;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--spaced {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #444444;
+      margin: 3px 9px 0 0;
+    }
+  }
+}
+
+.additional-products__item-buy {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  min-width: 280px;
+  min-height: 40px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 11px 78px 9px;
+  text-transform: uppercase;
+  margin: 0 2px 0 0;
+
+  @media (min-width: $desktop) {
+    min-width: auto;
+    width: 244px;
+    margin: 0 0 0 38px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    opacity: 0.75;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgb(255, 255, 255, 0.75);
+  }
+}
+
+.additional-products__container {
+  position: relative;
+  min-width: 280px;
+  min-height: 290px;
+  background-color: #444348;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+    image-set(
+      url("../../images/cat-bag-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-bag-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-bag-mobile@1x.png") type("image/png") 1x,
+      url("../../images/cat-bag-mobile@2x.png") type("image/png") 2x);
+  background-repeat: no-repeat;
+  background-size: cover, 280px 100%;
+  background-position: center;
+  margin: 0 20px;
+  box-sizing: border-box;
+  padding: 187px 0 43px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/gift.svg");
+    width: 80px;
+    height: 83px;
+    top: 57px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @media (min-width: $tablet) {
+    background-color: #000000;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+      image-set(
+        url("../../images/cat-bag-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-bag-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-bag-tablet@1x.png") type("image/png") 1x,
+        url("../../images/cat-bag-tablet@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: auto, 707px 100%;
+    min-width: 707px;
+    min-height: 200px;
+    margin: 0;
+    padding: 71px 113px 54px 421px;
+
+    &::before {
+      top: 57px;
+      left: 116px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 4 / 5;
+    width: 245px;
+    min-width: auto;
+    margin: 4px 0 0;
+    padding: 185px 38px 42px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+      image-set(
+        url("../../images/cat-bag-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-bag-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-bag-desktop@1x.png") type("image/png") 1x,
+        url("../../images/cat-bag-desktop@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover, 245px 100%;
+
+    &::before {
+      top: 56px;
+      left: 124px;
+    }
+  }
+}
+
+.additional-products__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
+}

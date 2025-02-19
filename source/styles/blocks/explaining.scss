@@ -1,0 +1,224 @@
+.explaining {
+  margin-bottom: 49px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.explaining__wrapper {
+  padding: 0 21px;
+
+  @media (min-width: $tablet) {
+    padding: 0 29px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}
+
+.explaining__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 71px 1px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.explaining__types {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: minmax(384px, auto) 325px;
+    grid-template-rows: minmax(318px, auto) minmax(307px, auto);
+    width: 710px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: minmax(324px, auto) minmax(326px, auto) minmax(324px, auto) minmax(246px, auto);
+    grid-template-rows: minmax(285px, auto);
+    margin: 0;
+    width: auto;
+  }
+}
+
+.explaining__item {
+  list-style: none;
+  margin: 0 0 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  @media (min-width: $tablet) {
+    min-height: 230px;
+    width: 250px;
+    display: list-item;
+    margin: 0 0 38px;
+  }
+}
+
+.explaining__item--one {
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/number-one.svg");
+    background-position: 124px 0;
+    background-repeat: no-repeat;
+    background-size: 74px 229px;
+  }
+}
+
+.explaining__item--two {
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/number-two.svg");
+    background-position: 121px 0;
+    background-repeat: no-repeat;
+    background-size: 115px 228px;
+  }
+}
+
+.explaining__item--three {
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/number-three.svg");
+    background-position: 120px 0;
+    background-repeat: no-repeat;
+    background-size: 121px 228px;
+  }
+}
+
+.explaining__item--four {
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/number-four.svg");
+    background-position: 109px 0;
+    background-repeat: no-repeat;
+    background-size: 151px 226px;
+  }
+}
+
+.explaining__image {
+  background-color: #68b738;
+  min-width: 60px;
+  height: 60px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.explaining__image--health::before {
+  content: "";
+  position: absolute;
+  background: url("../../icons/leaf.svg");
+  width: 30px;
+  height: 32px;
+  top: 14px;
+  left: 14px;
+
+  @media (min-width: $tablet) {
+    top: 26px;
+    left: 25px;
+  }
+}
+
+.explaining__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  margin: 3px 0 0 18px;
+
+  @media (min-width: $tablet) {
+    margin: 31px 0 0;
+    padding: 0 6px 72px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 6px 56px 0;
+  }
+}
+
+.explaining__description br {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.explaining__image--boil::before {
+  content: "";
+  position: absolute;
+  background: url("../../icons/boil.svg");
+  width: 26px;
+  height: 29px;
+  top: 16px;
+  left: 16px;
+
+  @media (min-width: $tablet) {
+    top: 27px;
+    left: 27px;
+  }
+}
+
+.explaining__image--eat::before {
+  content: "";
+  position: absolute;
+  background: url("../../icons/eat.svg");
+  width: 25px;
+  height: 30px;
+  top: 16px;
+  left: 17px;
+
+  @media (min-width: $tablet) {
+    top: 25px;
+    left: 29px;
+  }
+}
+
+.explaining__image--timer::before {
+  content: "";
+  position: absolute;
+  background: url("../../icons/timer.svg");
+  width: 26px;
+  height: 31px;
+  top: 15px;
+  left: 17px;
+
+  @media (min-width: $tablet) {
+    top: 24px;
+    left: 27px;
+  }
+}

@@ -1,0 +1,263 @@
+.select {
+  @media (min-width: $desktop) {
+    margin: 0 0 38px;
+  }
+}
+
+.select__wrapper {
+  padding: 0 21px;
+
+  @media (min-width: $tablet) {
+    padding: 0 29px;
+    margin: 0 0 45px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: minmax(572px, auto) minmax(572px, auto);
+    gap: 79px;
+    padding: 0 109px;
+    margin: 0 0 40px;
+  }
+}
+
+.select__version {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  min-height: 266px;
+  padding: 31px 19px 19px;
+  margin: 0 0 21px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 32px;
+    min-height: 372px;
+    padding: 78px 319px 49px 53px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 374px;
+    padding: 78px 61px 56px 52px;
+  }
+}
+
+.select__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 29px 71px;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 22px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 0 163px;
+    margin: 0 0 72px;
+  }
+}
+
+.select__image--sliming {
+  position: absolute;
+  top: 25px;
+  left: 19px;
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: -3px;
+    background: url("../../icons/slim-cat.svg");
+    background-size: 36px 50px;
+    width: 36px;
+    height: 50px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 200px;
+    top: 94px;
+    right: 64px;
+    left: auto;
+
+    &::before {
+      top: -11px;
+      left: 30px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 53px;
+
+    &::before {
+      top: -6px;
+      left: 14px;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.select__description {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  margin: 0 0 41px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 0;
+    bottom: -22px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 54px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 27px;
+  }
+}
+
+.select__more {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding: 0 42px 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../../icons/arrow.svg");
+    width: 24px;
+    height: 12px;
+    top: 6px;
+    left: calc(100% - 27px);
+    transition: transform 0.3s ease;
+    transform-origin: left center;
+  }
+
+  &:hover {
+    opacity: 0.75;
+
+    &::after {
+      animation: enlargeArrow 0.5s forwards;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.5;
+  }
+
+  @keyframes enlargeArrow {
+    0% {
+      transform: scaleX(1);
+    }
+
+    100% {
+      transform: scaleX(1.2);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 61px 0 0;
+
+    &::after {
+      top: 10px;
+      left: calc(100% - 34px);
+    }
+  }
+}
+
+.select__image--bulking {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -8px;
+    background: url("../../icons/bulk-cat.svg");
+    width: 67px;
+    height: 28px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    right: 64px;
+    left: auto;
+
+    &::before {
+      background-repeat: no-repeat;
+      background-size: 279px 113px;
+      width: 279px;
+      height: 113px;
+      top: 43px;
+      left: -36px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 53px;
+
+    &::before {
+      top: 20px;
+      left: -23px;
+      width: 143px;
+      height: 56px;
+      background-size: 143px 56px;
+      background-repeat: no-repeat;
+    }
+  }
+}

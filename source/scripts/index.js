@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const sliderContainer = document.querySelector(".example__container-slider");
 const slider = sliderContainer.querySelector(".example__slider");
-const imageLeft = sliderContainer.querySelector(".example__image--left");
-const imageRight = sliderContainer.querySelector(".example__image--right");
+const imageLeft = sliderContainer.querySelector(".example__slider-image--left");
+const imageRight = sliderContainer.querySelector(".example__slider-image--right");
 
 let isDragging = false;
 let startX = 0;

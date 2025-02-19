@@ -30,11 +30,11 @@
 
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <svg class="header__icon--closed" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        <svg class="header__icon header__icon--closed" width="24" height="24" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24" />
         </svg>
-        <svg class="header__icon--opened" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        <svg class="header__icon header__icon--opened" width="20" height="20" viewBox="0 0 20 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path transform="matrix(.68659 -.72705 .68659 .72705 2.0017 20)" stroke="#000" stroke-width="1.5"
             d="M0-.75h24.7577" />
@@ -90,7 +90,7 @@
 
         <div class="select__version">
           <h3 class="select__text">Похудение</h3>
-          <div class="select__image--sliming"></div>
+          <div class="select__image select__image--sliming"></div>
           <p class="select__description">Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.</p>
@@ -99,7 +99,7 @@
 
         <div class="select__version">
           <h3 class="select__text">Набор массы</h3>
-          <div class="select__image--bulking"></div>
+          <div class="select__image select__image--bulking"></div>
           <p class="select__description">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!</p>
@@ -161,7 +161,7 @@
               <span class="example__statistics">5 КГ</span>
             </dt>
             <dd class="example__definition">
-              <p class="example__consumption--weight">снижение веса</p>
+              <p class="example__consumption example__consumption--weight">снижение веса</p>
             </dd>
           </div>
 
@@ -170,7 +170,7 @@
               <span class="example__statistics">60 ДНЕЙ</span>
             </dt>
             <dd class="example__definition">
-              <p class="example__consumption--time">затрачено времени</p>
+              <p class="example__consumption example__consumption--time">затрачено времени</p>
             </dd>
           </div>
 
@@ -184,14 +184,14 @@
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/before-cat-desktop@1x.png 1x, images/before-cat-desktop@2x.png 2x">
-            <img class="example__slider-image example__image--left" src="images/before-cat-mobile@1x.png"
+            <img class="example__slider-image example__slider-image--left" src="images/before-cat-mobile@1x.png"
               srcset="images/before-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до диеты">
           </picture>
 
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/after-cat-mobile@1x.png 1x, images/after-cat-desktop@2x.png 2x">
-            <img class="example__slider-image example__image--right" src="images/after-cat-mobile@1x.png"
+            <img class="example__slider-image example__slider-image--right" src="images/after-cat-mobile@1x.png"
               srcset="images/after-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после диеты">
           </picture>
 

@@ -1,6 +1,7 @@
 .map {
   margin: 0;
   position: relative;
+
   @media (min-width: $desktop) {
     background-color: #ffffff;
     display: grid;
@@ -11,9 +12,11 @@
 
 .map--styled {
   padding: 26px 0 0;
+
   @media (min-width: $tablet) {
     padding: 60px 0 0;
   }
+
   @media (max-width: 1439px) {
     background-color: #f2f2f2;
   }
@@ -24,11 +27,13 @@
   padding: 0;
   display: flex;
   width: 280px;
+
   @media (min-width: $tablet) {
     margin: 0 auto 59px;
     gap: 308px;
     width: 628px;
   }
+
   @media (min-width: $desktop) {
     background-color: #ffffff;
     width: 565px;
@@ -52,6 +57,7 @@
   text-transform: uppercase;
   margin: 0;
   min-width: 140px;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
@@ -67,6 +73,7 @@
   line-height: 20px;
   margin: 0;
   min-width: 140px;
+
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
@@ -75,6 +82,7 @@
     margin: 0;
     white-space: pre-line;
   }
+
   @media (min-width: $desktop) {
     text-align: left;
   }
@@ -89,9 +97,11 @@
 .map__iframe iframe {
   width: 100%;
   min-height: 362px;
+
   @media (min-width: $tablet) {
     min-height: 400px;
   }
+
   @media (min-width: $desktop) {
     height: 100%;
   }

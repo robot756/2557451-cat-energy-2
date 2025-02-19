@@ -4,6 +4,7 @@
   @media (min-width: $tablet) {
     margin: 0 0 80px;
   }
+
   @media (min-width: $desktop) {
     margin: 0 0 12px;
   }
@@ -121,7 +122,6 @@
   @media (min-width: $desktop) {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
-    margin: 29px 0 0;
     border: none;
     padding: 0;
     margin: 19px 0 0 2px;
@@ -255,7 +255,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    margin: 0px 1px 0px auto;
+    margin: 0 1px 0 auto;
     color: #444444;
   }
 
@@ -275,12 +275,10 @@
   }
 
   @media (min-width: $desktop) {
-
     &--spaced {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       line-height: 20px;
-      line-height: 14px;
       color: #444444;
       margin: 3px 9px 0 0;
     }
@@ -330,8 +328,10 @@
   min-width: 280px;
   min-height: 290px;
   background-color: #444348;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
-    image-set(url("../../images/cat-bag-mobile@1x.webp") type("image/webp") 1x,
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+    image-set(
+      url("../../images/cat-bag-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/cat-bag-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/cat-bag-mobile@1x.png") type("image/png") 1x,
       url("../../images/cat-bag-mobile@2x.png") type("image/png") 2x);
@@ -355,8 +355,10 @@
 
   @media (min-width: $tablet) {
     background-color: #000000;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
-      image-set(url("../../images/cat-bag-tablet@1x.webp") type("image/webp") 1x,
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+      image-set(
+        url("../../images/cat-bag-tablet@1x.webp") type("image/webp") 1x,
         url("../../images/cat-bag-tablet@2x.webp") type("image/webp") 2x,
         url("../../images/cat-bag-tablet@1x.png") type("image/png") 1x,
         url("../../images/cat-bag-tablet@2x.png") type("image/png") 2x);
@@ -379,8 +381,10 @@
     min-width: auto;
     margin: 4px 0 0;
     padding: 185px 38px 42px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
-      image-set(url("../../images/cat-bag-desktop@1x.webp") type("image/webp") 1x,
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+      image-set(
+        url("../../images/cat-bag-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/cat-bag-desktop@2x.webp") type("image/webp") 2x,
         url("../../images/cat-bag-desktop@1x.png") type("image/png") 1x,
         url("../../images/cat-bag-desktop@2x.png") type("image/png") 2x);

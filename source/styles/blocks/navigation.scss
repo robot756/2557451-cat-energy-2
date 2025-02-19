@@ -2,11 +2,13 @@
   display: none;
   position: relative;
   margin: 0;
+
   @media (min-width: $tablet) {
-    margin: 0 0px 0 auto;
+    margin: 0 0 0 auto; // Удалил лишний "0px"
     display: block;
     width: 471px;
   }
+
   @media (min-width: $desktop) {
     margin: 0 116px 0 auto;
   }
@@ -18,11 +20,13 @@
   background: #ffffff;
   z-index: 5;
   padding: 23px 0 0;
+
   @media (min-width: $tablet) {
     background: none;
     position: static;
     padding: 40px 0 0;
   }
+
   @media (min-width: $desktop) {
     padding: 71px 0 0;
   }
@@ -32,12 +36,14 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 11px 34px;
     padding: 0 34px 0 0;
   }
+
   @media (min-width: $desktop) {
     gap: 10px 33px;
     padding: 0;
@@ -75,8 +81,8 @@
     width: 100%;
     height: 0;
   }
-  @media (min-width: $tablet) {
 
+  @media (min-width: $tablet) {
     &::after,
     &::before,
     &:first-child::before,
@@ -104,6 +110,7 @@
     transform: translateX(-50%);
     border: none;
   }
+
   @media (min-width: $desktop) {
     bottom: -8px;
     background-color: #ffffff;
@@ -122,6 +129,7 @@
     transform: translateX(-50%);
     border: none;
   }
+
   @media (min-width: $desktop) {
     bottom: -8px;
     background-color: #68b738;
@@ -137,26 +145,30 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
   }
 
-  &:hover,
+  &:hover {
+    opacity: 0.75;
+  }
+
   &:focus {
     opacity: 0.75;
-    outline: none;
+    outline: 2px dotted #6b6a6a;
   }
 
   &:active {
     opacity: 0.5;
   }
-
 }
 
 .navigation__link--color {

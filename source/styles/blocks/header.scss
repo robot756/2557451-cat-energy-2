@@ -1,34 +1,43 @@
 .header {
   position: relative;
+
   @media (min-width: $tablet) {
     background-position: 103px 41px;
   }
+
   @media (min-width: $desktop) {
-    background-image: linear-gradient(90deg,
-        rgb(255, 255, 255) 50%,
-        rgba(104, 183, 56, 0.85) 50%),
-      image-set(url("../../images/cat-background-desktop@1x.webp") type("image/webp") 1x,
-        url("../../images/cat-background-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/cat-background-desktop@1x.png") type("image/png") 1x,
-        url("../../images/cat-background-desktop@2x.png") type("image/png") 2x);
+    background-image:
+      linear-gradient(90deg,
+      rgb(255, 255, 255) 50%,
+      rgba(104, 183, 56, 0.85) 50%),
+      image-set(
+        url("../../images/cat-background-desktop@1x.webp") 1x,
+        url("../../images/cat-background-desktop@2x.webp") 2x,
+        url("../../images/cat-background-desktop@1x.png") 1x,
+        url("../../images/cat-background-desktop@2x.png") 2x);
     background-repeat: no-repeat;
-    background-position: center, calc(100vw - 720px) top;
-    background-size: auto, 1040px 100%;
+    background-position:
+      center,
+      calc(100vw - 720px) top;
+    background-size:
+      auto,
+      1040px 100%;
     background-color: #525158;
-    margin: 0 0 82px;
+    margin-bottom: 82px;
   }
 }
 
 .header--alternative-bg {
   background-color: transparent;
   background-position: 50% 25px;
-  margin: 0 0 29px;
+  margin-bottom: 29px;
+
   @media (min-width: $tablet) {
-    background-image: none;
-    margin: 0 0 11px;
+    margin-bottom: 11px;
     background-image: url("../../images/logo-name.svg");
     background-position: 102px 41px;
   }
+
   @media (max-width: 767px) {
     &::before {
       content: "";
@@ -39,8 +48,9 @@
       bottom: -2px;
     }
   }
+
   @media (min-width: $desktop) {
-    margin: 0 0 20px;
+    margin-bottom: 20px;
     background-position: 193px 74px;
   }
 }
@@ -48,9 +58,11 @@
 .header__container {
   padding-top: 64px;
   position: relative;
+
   @media (min-width: $tablet) {
     padding: 0 0 65px;
   }
+
   @media (min-width: $desktop) {
     padding: 0 0 66px;
   }
@@ -60,10 +72,12 @@
   position: absolute;
   top: 10px;
   left: 20px;
+
   @media (min-width: $tablet) {
     top: 25px;
     left: 30px;
   }
+
   @media (min-width: $desktop) {
     top: 55px;
     left: 110px;
@@ -93,8 +107,25 @@
   right: 20px;
   background-color: #ffffff;
   cursor: pointer;
+
   @media (min-width: $tablet) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:focus {
+    outline: 2px dotted #0000ff;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }
 
@@ -103,8 +134,10 @@
 }
 
 .header__introduction {
-  background-image: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 62.4%, #ffffff 62.4%),
-    image-set(url("../../images/cat-background-mobile@1x.webp") type("image/webp") 1x,
+  background-image:
+    linear-gradient(180deg, rgba(104, 183, 56, 0.85) 62.4%, #ffffff 62.4%),
+    image-set(
+      url("../../images/cat-background-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/cat-background-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/cat-background-mobile@1x.png") type("image/png") 1x,
       url("../../images/cat-background-mobile@2x.png") type("image/png") 2x);
@@ -114,6 +147,7 @@
   background-size: 100% 101%, 320px 63%;
   background-position: top center, top center;
   text-align: center;
+
   @media (min-width: $tablet) {
     background-image: none;
     background-color: #ffffff;
@@ -121,6 +155,7 @@
     grid-template-rows: minmax(172px, auto) minmax(39px, auto) 28px minmax(544px, auto) 36px;
     text-align: left;
   }
+
   @media (min-width: $desktop) {
     position: relative;
     grid-template-rows: minmax(186px, auto) minmax(54px, auto) 48px minmax(238px, auto);
@@ -138,6 +173,7 @@
   padding-top: 27px;
   color: #ffffff;
   z-index: 5;
+
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
@@ -147,6 +183,7 @@
     width: 500px;
     text-align: left;
   }
+
   @media (min-width: $desktop) {
     margin: 58px 0 0 189px;
   }
@@ -158,18 +195,18 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0;
   color: #ffffff;
   position: relative;
   margin: 0 0 28px;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin: 0;
     width: 283px;
     margin: 0 10px 19px 120px;
   }
+
   @media (min-width: $desktop) {
     margin: 32px 0 0 190px;
   }
@@ -177,8 +214,9 @@
 
 .header__can-food {
   @media (min-width: $tablet) {
-    margin: 0 0 0 29px;
+    margin-left: 29px;
   }
+
   @media (min-width: $desktop) {
     margin: 0;
     position: absolute;
@@ -197,7 +235,7 @@
   border: 0;
   min-height: 40px;
   margin: 0 20px 19px;
-  padding: 10px 0px 0;
+  padding: 10px 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -205,17 +243,18 @@
   display: block;
   cursor: pointer;
   text-decoration: none;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
-    margin: 0;
     width: 243px;
     margin: 0 0 0 120px;
     padding: 17px 14px 14px;
     align-self: start;
   }
+
   @media (min-width: $desktop) {
-    margin: 0 0 0 190px
+    margin: 0 0 0 190px;
   }
 
   &:hover {

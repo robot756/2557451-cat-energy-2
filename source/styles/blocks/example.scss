@@ -1,10 +1,12 @@
 .example {
   background-color: #eaeaea;
   margin: 0 0 27px;
+
   @media (min-width: $tablet) {
     margin: 0 0 37px;
     background-color: transparent;
   }
+
   @media (min-width: $desktop) {
     margin: 0 0 59px;
   }
@@ -13,6 +15,7 @@
 .example__wrapper {
   padding: 25px 20px 39px;
   position: relative;
+
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: minmax(378px, auto) minmax(219px, auto) minmax(138px, auto);
@@ -29,6 +32,7 @@
       bottom: 24px;
     }
   }
+
   @media (min-width: $desktop) {
     grid-template-rows: minmax(205px, auto) minmax(164px, auto) minmax(75px, auto) minmax(95px, auto);
     grid-template-columns: minmax(258px, auto) minmax(564px, auto) minmax(90px, auto);
@@ -53,12 +57,14 @@
   color: #000000;
   margin: 0 0 41px;
   width: 279px;
+
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     width: 325px;
     margin: 0 0 50px 11px;
   }
+
   @media (min-width: $desktop) {
     margin: 0 0 90px 90px;
     grid-row: 1;
@@ -73,15 +79,15 @@
   line-height: 18px;
   color: #444444;
   margin: 0 0 20px;
+
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
     grid-row-start: 2;
     grid-column: 1 / 4;
     margin: 0 0 53px 10px;
-    font-size: 16px;
-    line-height: 24px;
   }
+
   @media (min-width: $desktop) {
     margin: 0 210px 53px 90px;
     grid-column: 1 / 2;
@@ -96,10 +102,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px 0;
+
   @media (min-width: $tablet) {
     margin: 0 0 0 10px;
     grid-row-start: 3;
   }
+
   @media (min-width: $desktop) {
     gap: 20px 44px;
     margin: 0 0 0 90px;
@@ -115,6 +123,7 @@
   position: relative;
   box-sizing: border-box;
   padding: 14px 13px;
+
   @media (min-width: $desktop) {
     width: 25%;
     padding: 15px 13px;
@@ -131,6 +140,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 37px;
@@ -143,6 +153,7 @@
   top: calc(100% - 9px);
   left: 50%;
   transform: translate(-50%);
+
   @media (min-width: $tablet) {
     top: calc(100% - 9px);
   }
@@ -159,13 +170,15 @@
   width: 60px;
   text-align: center;
   padding: 0 13px;
+
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
     width: 98px;
-    padding: 0px 8px;
+    padding: 0 8px; // Исправлено
     background-color: #ffffff;
   }
+
   @media (min-width: $desktop) {
     background-color: #eaeaea;
   }
@@ -182,6 +195,7 @@
   width: 60px;
   text-align: center;
   padding: 0 13px;
+
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
@@ -189,6 +203,7 @@
     padding: 0 7px;
     background-color: #ffffff;
   }
+
   @media (min-width: $desktop) {
     background-color: #eaeaea;
   }
@@ -203,6 +218,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 20px;
+
   @media (min-width: $tablet) {
     text-align: right;
     grid-column: 2 / 4;
@@ -211,6 +227,7 @@
     font-size: 20px;
     line-height: 30px;
   }
+
   @media (min-width: $desktop) {
     grid-column: 1;
     grid-row: 4 / 5;
@@ -221,18 +238,22 @@
 
 .example__amount {
   margin-left: 0;
+
   @media (min-width: $tablet) {
     margin-left: 0;
   }
+
   @media (min-width: $desktop) {
     margin-left: 61px;
-
   }
 }
 
 .example__amount br {
-  @media (max-width: 767px),
-  (min-width: $desktop) {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
     display: none;
   }
 }
@@ -242,6 +263,7 @@
   width: 280px;
   height: 256px;
   margin: auto;
+
   @media (min-width: $tablet) {
     grid-row-start: 5;
     grid-column: 1 / -1;
@@ -250,6 +272,7 @@
     width: 560px;
     height: 512px;
   }
+
   @media (min-width: $desktop) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
@@ -280,6 +303,7 @@
   cursor: ew-resize;
   transform: translateX(-50%);
   border-radius: 2px;
+
   @media (min-width: $tablet) {
     height: 512px;
   }

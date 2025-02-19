@@ -1,6 +1,7 @@
 .explaining {
   margin-bottom: 49px;
   position: relative;
+
   @media (min-width: $tablet) {
     margin: 0;
 
@@ -13,6 +14,7 @@
       bottom: 20px;
     }
   }
+
   @media (min-width: $desktop) {
     &::after {
       content: none;
@@ -22,10 +24,12 @@
 
 .explaining__wrapper {
   padding: 0 21px;
-  @media(min-width: $tablet) {
+
+  @media (min-width: $tablet) {
     padding: 0 29px;
   }
-  @media(min-width: $desktop) {
+
+  @media (min-width: $desktop) {
     padding: 0 110px;
   }
 }
@@ -37,11 +41,13 @@
   line-height: 40px;
   color: #000000;
   margin: 0 0 38px;
+
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 71px 1px;
   }
+
   @media (min-width: $desktop) {
     font-size: 60px;
     line-height: 60px;
@@ -51,6 +57,7 @@
 .explaining__types {
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: minmax(384px, auto) 325px;
@@ -58,6 +65,7 @@
     width: 710px;
     margin: 0 auto;
   }
+
   @media (min-width: $desktop) {
     grid-template-columns: minmax(324px, auto) minmax(326px, auto) minmax(324px, auto) minmax(246px, auto);
     grid-template-rows: minmax(285px, auto);
@@ -72,6 +80,7 @@
   position: relative;
   display: flex;
   align-items: flex-start;
+
   @media (min-width: $tablet) {
     min-height: 230px;
     width: 250px;
@@ -121,6 +130,7 @@
   min-width: 60px;
   height: 60px;
   position: relative;
+
   @media (min-width: $tablet) {
     width: 80px;
     height: 80px;
@@ -135,6 +145,7 @@
   height: 32px;
   top: 14px;
   left: 14px;
+
   @media (min-width: $tablet) {
     top: 26px;
     left: 25px;
@@ -148,12 +159,14 @@
   line-height: 18px;
   color: #444444;
   margin: 3px 0 0 18px;
+
   @media (min-width: $tablet) {
     margin: 31px 0 0;
     padding: 0 6px 72px 0;
     font-size: 16px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop) {
     padding: 0 6px 56px 0;
   }
@@ -173,7 +186,8 @@
   height: 29px;
   top: 16px;
   left: 16px;
-  @media(min-width: $tablet) {
+
+  @media (min-width: $tablet) {
     top: 27px;
     left: 27px;
   }
@@ -187,6 +201,7 @@
   height: 30px;
   top: 16px;
   left: 17px;
+
   @media (min-width: $tablet) {
     top: 25px;
     left: 29px;
@@ -201,6 +216,7 @@
   height: 31px;
   top: 15px;
   left: 17px;
+
   @media (min-width: $tablet) {
     top: 24px;
     left: 27px;

@@ -6,10 +6,12 @@
 
 .select__wrapper {
   padding: 0 21px;
+
   @media (min-width: $tablet) {
     padding: 0 29px;
     margin: 0 0 45px;
   }
+
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: minmax(572px, auto) minmax(572px, auto);
@@ -26,11 +28,13 @@
   min-height: 266px;
   padding: 31px 19px 19px;
   margin: 0 0 21px;
+
   @media (min-width: $tablet) {
     margin: 0 0 32px;
     min-height: 372px;
     padding: 78px 319px 49px 53px;
   }
+
   @media (min-width: $desktop) {
     min-height: 374px;
     padding: 78px 61px 56px 52px;
@@ -46,11 +50,13 @@
   text-transform: uppercase;
   margin: 0 0 29px 71px;
   padding: 0;
+
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 22px;
   }
+
   @media (min-width: $desktop) {
     padding: 0 0 0 163px;
     margin: 0 0 72px;
@@ -76,6 +82,7 @@
     width: 36px;
     height: 50px;
   }
+
   @media (min-width: $tablet) {
     width: 200px;
     height: 200px;
@@ -92,6 +99,7 @@
       background-repeat: no-repeat;
     }
   }
+
   @media (min-width: $desktop) {
     width: 100px;
     height: 100px;
@@ -127,6 +135,7 @@
     bottom: -22px;
     left: 0;
   }
+
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
@@ -136,6 +145,7 @@
       content: none;
     }
   }
+
   @media (min-width: $desktop) {
     margin: 0 0 27px;
   }
@@ -150,7 +160,7 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
-  padding: 0 16px 0 0;
+  padding: 0 42px 0 0;
 
   &::after {
     content: "";
@@ -159,13 +169,14 @@
     width: 24px;
     height: 12px;
     top: 6px;
-    left: calc(100% - 1px);
+    left: calc(100% - 27px);
     transition: transform 0.3s ease;
     transform-origin: left center;
   }
 
   &:hover {
     opacity: 0.75;
+
     &::after {
       animation: enlargeArrow 0.5s forwards;
     }
@@ -175,21 +186,25 @@
     outline: none;
     opacity: 0.5;
   }
+
   @keyframes enlargeArrow {
-   0% {
+    0% {
       transform: scaleX(1);
     }
+
     100% {
       transform: scaleX(1.2);
     }
   }
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0 61px 0 0;
 
     &::after {
       top: 10px;
-      left: calc(100% + 10px);
+      left: calc(100% - 34px);
     }
   }
 }
@@ -212,6 +227,7 @@
     width: 67px;
     height: 28px;
   }
+
   @media (min-width: $tablet) {
     width: 200px;
     height: 200px;
@@ -228,6 +244,7 @@
       left: -36px;
     }
   }
+
   @media (min-width: $desktop) {
     width: 100px;
     height: 100px;

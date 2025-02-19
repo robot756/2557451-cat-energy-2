@@ -75,7 +75,7 @@ function setSliderPosition(clientX) {
   imageRight.style.clipPath = `inset(0 0 0 ${percentage}%)`;
 }
 
-slider.addEventListener('mousedown', (event) => {
+slider.addEventListener('mousedown', () => {
   isDragging = true;
   sliderLeft = slider.offsetLeft;
 });
@@ -91,7 +91,7 @@ document.addEventListener('mouseup', () => {
   isDragging = false;
 });
 
-slider.addEventListener('touchstart', (event) => {
+slider.addEventListener('touchstart', () => {
   isDragging = true;
   sliderLeft = slider.offsetLeft;
 });

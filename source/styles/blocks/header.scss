@@ -65,6 +65,8 @@
 
   @media (min-width: $desktop) {
     padding: 0 0 66px;
+    margin: 0 auto;
+    width: 1440px;
   }
 }
 
@@ -160,6 +162,8 @@
     position: relative;
     grid-template-rows: minmax(186px, auto) minmax(54px, auto) 48px minmax(238px, auto);
     background-color: transparent;
+    margin: 0 auto;
+    width: 1440px;
   }
 }
 

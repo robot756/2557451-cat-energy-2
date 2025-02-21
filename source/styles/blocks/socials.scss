@@ -1,6 +1,6 @@
 .socials {
   margin: 0;
-  padding: 39px 0 35px;
+  padding: 39px 0 41px;
   position: relative;
   background: #f2f2f2;
 
@@ -19,6 +19,8 @@
   @media (min-width: $desktop) {
     padding: 69px 75px 35px 110px;
     min-height: 169px;
+    grid-template-columns: 546px 511px 200px;
+    justify-content: center;
   }
 }
 

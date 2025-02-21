@@ -35,7 +35,8 @@
 
   @media (min-width: $desktop) {
     grid-template-rows: minmax(205px, auto) minmax(164px, auto) minmax(75px, auto) minmax(95px, auto);
-    grid-template-columns: minmax(258px, auto) minmax(564px, auto) minmax(90px, auto);
+    grid-template-columns: 746px 516px 139px;
+    justify-content: center;
 
     &::after {
       content: "";
@@ -44,7 +45,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 161px;
+      top: calc(100% - 404px);
     }
   }
 }
@@ -89,7 +90,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 210px 53px 90px;
+    margin: 0 223px 53px 90px;
     grid-column: 1 / 2;
     grid-row: 2;
   }
@@ -109,7 +110,7 @@
   }
 
   @media (min-width: $desktop) {
-    gap: 20px 44px;
+    gap: 20px 39px;
     margin: 0 0 0 90px;
     justify-content: flex-start;
   }
@@ -276,6 +277,9 @@
   @media (min-width: $desktop) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+    position: absolute;
+    left: -14px;
+    top: calc(100% - 538px);
   }
 }
 

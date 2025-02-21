@@ -6,7 +6,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 103px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -16,7 +17,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 45px;
+    margin: 0 auto 46px;
   }
 }
 
@@ -63,18 +64,17 @@
   @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
-    margin: 0 0 73px 110px;
+    margin: 0 0 73px 71px;
+    padding: 0 41px 0 39px;
+    display: inline-block;
+    background-color: #ffffff;
 
     &::after {
-      width: calc(100% - 294px);
-      height: 2px;
-      bottom: 20px;
+      display: none;
     }
 
     &::before {
-      width: 70px;
-      bottom: 20px;
-      left: -110px;
+      display: none;
     }
   }
 }

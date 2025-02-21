@@ -16,6 +16,9 @@
   }
 
   @media (min-width: $desktop) {
+    width: 1440px;
+    margin: 0 auto;
+
     &::after {
       content: none;
     }

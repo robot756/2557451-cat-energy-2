@@ -66,14 +66,23 @@
       <p class="header__introduction-description">Занялся собой? Займись котом!</p>
 
       <picture>
+        <source width="552" height="499" type="image/webp" media="(min-width: 1440px)"
+          srcset="images/can-food-desktop@1x.webp 1x, images/can-food-desktop@1x.webp 2x">
+
+        <source width="709" height="609" type="image/webp" media="(min-width: 768px)"
+          srcset="images/can-food-tablet@1x.webp 1x, images/can-food-tablet@2x.webp 2x">
+
+        <source width="280" height="270" type="image/webp"
+          srcset="images/can-food-mobile@1x.webp 1x, images/can-food-mobile@2x.webp 2x">
+
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
           srcset="images/can-food-desktop@1x.png 1x, images/can-food-desktop@2x.png 2x">
 
         <source width="709" height="609" type="image/png" media="(min-width: 768px)"
           srcset="images/can-food-tablet@1x.png 1x, images/can-food-tablet@2x.png 2x">
 
-        <img class="header__can-food" src="images/can-food-mobile@1x.png" srcset="images/can-food-mobile@2x.png 2x"
-          width="280" height="270" alt="Банка с кормом «Кэт энерджи»">
+        <img width="280" height="270" class="header__can-food" src="images/can-food-mobile@1x.png"
+          srcset="images/can-food-mobile@2x.png 2x" alt="Банка с кормом «Кэт энерджи»">
       </picture>
 
       <a class="header__select-program" href="#">подобрать программу</a>
@@ -182,17 +191,31 @@
 
         <div class="example__container-slider">
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)"
+              srcset="images/before-cat-desktop@1x.webp 1x, images/before-cat-desktop@2x.webp 2x">
+
+            <source width="280" height="256" type="image/webp"
+              srcset="images/before-cat-mobile@1x.webp 1x, images/before-cat-mobile@2x.webp 2x">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/before-cat-desktop@1x.png 1x, images/before-cat-desktop@2x.png 2x">
-            <img class="example__slider-image example__slider-image--left" src="images/before-cat-mobile@1x.png"
-              srcset="images/before-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до диеты">
+
+            <img width="280" height="256" class="example__slider-image example__slider-image--left"
+              src="images/before-cat-mobile@1x.png" srcset="images/before-cat-mobile@2x.png 2x" alt="Кот до диеты">
           </picture>
 
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)"
+              srcset="images/after-cat-desktop@1x.webp 1x, images/after-cat-desktop@2x.webp 2x">
+            
+            <source width="280" height="256" type="image/webp"
+              srcset="images/after-cat-mobile@1x.webp 1x, images/after-cat-mobile@2x.webp 2x">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
-              srcset="images/after-cat-mobile@1x.png 1x, images/after-cat-desktop@2x.png 2x">
-            <img class="example__slider-image example__slider-image--right" src="images/after-cat-mobile@1x.png"
-              srcset="images/after-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после диеты">
+              srcset="images/after-cat-desktop@1x.png 1x, images/after-cat-desktop@2x.png 2x">
+
+            <img width="280" height="256" class="example__slider-image example__slider-image--right" src="images/after-cat-mobile@1x.png"
+              srcset="images/after-cat-mobile@2x.png 2x" alt="Кот после диеты">
           </picture>
 
           <div class="example__slider" tabindex="0"></div>

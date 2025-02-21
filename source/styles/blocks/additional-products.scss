@@ -13,7 +13,7 @@
 }
 
 .additional-products__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -187,7 +187,7 @@
 }
 
 .additional-products__item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -222,7 +222,7 @@
 }
 
 .additional-products__item-volume {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -245,7 +245,7 @@
 }
 
 .additional-products__item-price {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -253,7 +253,7 @@
   color: #444444;
 
   &--spaced {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -267,7 +267,7 @@
     line-height: 20px;
 
     &--spaced {
-      font-family: "Lato", sans-serif;
+      font-family: "Lato", "Helvetica", sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
@@ -278,7 +278,7 @@
 
   @media (min-width: $desktop) {
     &--spaced {
-      font-family: "Lato", sans-serif;
+      font-family: "Lato", "Helvetica", sans-serif;
       font-size: 16px;
       line-height: 20px;
       color: #444444;
@@ -288,7 +288,7 @@
 }
 
 .additional-products__item-buy {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -401,7 +401,7 @@
 }
 
 .additional-products__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
